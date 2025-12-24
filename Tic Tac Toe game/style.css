@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #548687;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Heading */
+h1 {
+  margin-top: 20px;
+}
+
+#status {
+  margin: 10px;
+  font-size: 18px;
+}
+
+/* Board */
+.container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Boxes */
+.box {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  background-color: #ffffc7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box.x {
+  color: #2563eb;   /* Blue - X */
+}
+
+.box.o {
+  color: #dc2626;   /* Red - O */
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Message Box */
+.msg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#msg {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hide {
+  display: none;
+}
